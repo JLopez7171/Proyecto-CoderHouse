@@ -1,0 +1,27 @@
+/*?--Header--*/
+header{
+    background-color: $color-primario;
+    color: #000000;
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+
+    h1 {
+        color: #000000;
+        font-size: 40px;
+    }
+
+    a {
+        text-decoration: none;
+        color: #000000;
+    }
+}
+
+.fondo-navbar {
+    background-color: #F7DCB9;
+}
+
+.dropdown-menu {
+    background-color: #F7DCB9 !important;
+    --bs-dropdown-link-hover-bg: #DEAC80 !important;
+}

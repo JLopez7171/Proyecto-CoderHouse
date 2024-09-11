@@ -1,0 +1,23 @@
+$colores: #F7DCB9, #DEAC80, #B5C18E, #914F1E;
+$color-primario: #F7DCB9;
+$color-secundario: #DEAC80;
+
+%enlaces-productos{
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #B5C18E;
+    font-size: 12px;
+    padding: 8px;
+    &hover{
+        background-color: #DEAC80;
+        color: #00ccff;
+        transition: all .1s;
+    }
+}
+%footer{
+    display: flex;
+    justify-content: space-around;
+    background-color: $color-primario;
+    margin: 0;
+    bottom: 0;
+}
