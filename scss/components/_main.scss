@@ -357,60 +357,92 @@
 
 /*?---Pagina contacto---*/
 .hero-contacto{
-    display: flex;
-    flex-direction: column;
-    background-color: #E5E1DA;
-    width: auto;
-    text-align: center;
-    align-items: center;
+    background: url('../img/hero-contacto.jpg') no-repeat center center;
+    background-size: cover;
+    width: 100%;
     height: calc(100vh - 76px);
-    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    flex-direction: column;
+    border-bottom: 40px solid $color-primario;
     h2{
-        color: #000000;
-        font-size: 30px;
-        margin-bottom: 0;
-        margin: 20px;
+        margin-right: 25px;
     }
-    div{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
+    h3{
+        margin-right: 25px;
+    }
+}
+.contenedor-grilla-formulario{
+    display: grid;
+    grid-template-areas: 
+    "formulario formulario"
+    "formulario formulario"
+    "faside faside"
+    "faside faside";
+    grid-template-columns: 50%;
+    grid-auto-rows: auto;
+    height: auto
+}
+.contenedor-formulario{
+    grid-area: formulario;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    form{
+        padding: 50px;
+        box-shadow: 0 0 20px #000000;
+        border-radius: 20px;
+        text-align: center;
         margin: 20px;
-        form{
+        div{
             display: flex;
-            flex-direction: row;
+            flex-direction: column;
+            text-align: left;
+            label{
+                margin-top: 15px;
+                margin-bottom: 15px;
+            }
+            input{
+                padding: 17px 25px;
+                border-radius: 25px;
+                background-color: white;
+                border: 2px solid $color-secundario;
+            }
+            textarea{
+                padding: 17px 25px;
+                border-radius: 25px;
+                background-color: white;
+                border: 2px solid $color-secundario;
+            }
         }
     }
 }
-.informacion-msg{
-    height: 533px;
+.contenedor-formulario-aside{
+    grid-area: faside;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
     div{
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        h3{
-            background-color: $color-primario;
-            font-size: 30px;
-            padding: 20px;
+        border-radius: 25px;
+        box-shadow: 0 0 20px black;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        width: 300px;
+        p{
+            padding: 10px;
         }
-        div{
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-            align-items: center;
-            margin: 20px;
-            img{
-                width: 350px;
-                height: 350px;
-            }
-            p{
-                width: 45%;
-                font-size: 16px;
-                background-color: #B5C18E;
-                padding: 20px;
-            }
+        .form-cont{
+            font-size: 25px;
         }
+    }
+    h2{
+        margin-top: 15px;
+        margin-bottom: 15px;
+        background-color: $color-primario;
+        padding: 20px;
+        width: 100%;
     }
 }
