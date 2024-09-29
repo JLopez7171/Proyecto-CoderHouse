@@ -9,12 +9,31 @@
         align-items: center;
     }
 }
+@media screen and (max-width:744px){
+    .servicio-1{
+        grid-row: unset;
+    }
+    .servicio-2{
+        grid-row: unset;
+    }
+    .servicio-3{
+        grid-row: unset;
+    }
+}
 @media screen and (max-width:647px){
     .navegacion ul{
         flex-direction: column;
     }
     .navegacion ul li a{
         padding: 5px 10px;
+    }
+    .hero-contacto{
+        h2{
+            font-size: 25px;
+        }
+        h3{
+            font-size: 21px;
+        }
     }
     }
 
@@ -33,6 +52,16 @@
         padding: 10px;
     }
 }
+@media screen and (max-width:591px){
+    .hero-contacto{
+        h2{
+            font-size: 20px;
+        }
+        h3{
+            visibility: hidden;
+        }
+    }
+}
 @media screen and (max-width:542px){
     .productos-contenedor-guitarras div{
         width: 150px;
@@ -46,6 +75,24 @@
     }
     .contenedor-grilla-guitarras-bajos{
         grid-template-columns: 125px;
+    }
+}
+@media screen and (max-width:480px){
+    .contenedor-flex-servicios{
+        div{
+            width: 300px;
+            height: 550px;
+            p{
+                font-size: 15px;
+            }
+            ul{
+                li{
+                    a{
+                        font-size: 15px;
+                    }
+                }
+            }
+        }
     }
 }
 @media screen and (max-width:435px){
@@ -63,5 +110,28 @@
     }
     .guitarra-producto{
         object-fit: cover;
+    }
+    .contenedor-formulario{
+        form{
+            width: 320px;
+        }
+    }
+}
+@media screen and (max-width:361px){
+    .hero-contacto{
+        h2{
+            font-size: 18px;
+        }
+    }
+    .contenedor-formulario{
+        form{
+            width: 280px;
+        }
+    }
+    .contenedor-flex-servicios{
+        div{
+            width: 200px;
+            height: 350px;
+        }
     }
 }

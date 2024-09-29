@@ -133,14 +133,6 @@ header {
 .img-6 {
   grid-column: span 2; }
 
-.ir-arriba {
-  position: fixed;
-  bottom: 50px;
-  right: 50px; }
-
-.formulario {
-  margin: 20px; }
-
 /**?---Pagina guitarras y bajos---**/
 .contenedor-grilla-guitarras-bajos {
   display: grid;
@@ -187,6 +179,7 @@ header {
   .productos-contenedor-guitarras div {
     margin: 20px;
     border: 2px solid black;
+    box-shadow: 0 0 20 black;
     width: 250px;
     height: 350px;
     background-color: #ffffff;
@@ -244,6 +237,7 @@ header {
   .productos-contenedor-teclados div {
     margin: 20px;
     border: 2px solid black;
+    box-shadow: 0 0 20 black;
     width: 250px;
     height: 350px;
     background-color: #ffffff;
@@ -301,6 +295,7 @@ header {
   .productos-contenedor-percusion div {
     margin: 20px;
     border: 2px solid black;
+    box-shadow: 0 0 20 black;
     width: 250px;
     height: 350px;
     background-color: #ffffff;
@@ -342,10 +337,11 @@ header {
   align-items: center; }
   .contenedor-formulario form {
     padding: 50px;
-    box-shadow: 0 0 20px #000000;
+    box-shadow: 0 0 15px #000000;
     border-radius: 20px;
     text-align: center;
-    margin: 20px; }
+    margin: 20px;
+    height: 650px; }
     .contenedor-formulario form div {
       display: flex;
       flex-direction: column;
@@ -354,7 +350,7 @@ header {
         margin-top: 15px;
         margin-bottom: 15px; }
       .contenedor-formulario form div input {
-        padding: 17px 25px;
+        padding: 15px 20px;
         border-radius: 25px;
         background-color: white;
         border: 2px solid #DEAC80; }
@@ -372,11 +368,10 @@ header {
   text-align: center;
   align-items: center; }
   .contenedor-formulario-aside div {
-    border-radius: 25px;
-    box-shadow: 0 0 20px black;
+    box-shadow: 0 0 15px black;
     margin-top: 10px;
     margin-bottom: 10px;
-    width: 300px; }
+    width: 500px; }
     .contenedor-formulario-aside div p {
       padding: 10px; }
     .contenedor-formulario-aside div .form-cont {
@@ -387,6 +382,90 @@ header {
     background-color: #F7DCB9;
     padding: 20px;
     width: 100%; }
+
+/**!-- Pagina servicios--**/
+.hero-servicios {
+  background: url("../img/hero-servicios.jpg") no-repeat center center;
+  background-size: cover;
+  width: 100%;
+  height: calc(100vh - 76px);
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-direction: column;
+  border-bottom: 40px solid #F7DCB9; }
+  .hero-servicios h2 {
+    font-size: 40px;
+    margin: 75px;
+    padding: 25px;
+    color: #F7DCB9;
+    border: 2px solid #F7DCB9; }
+
+.servicios-navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap; }
+  .servicios-navbar a {
+    margin: 15px;
+    text-decoration: none;
+    color: #000000;
+    border-radius: 25px;
+    box-shadow: 0 0 20px black;
+    padding: 20px;
+    background-color: #DEAC80;
+    transition: 2s; }
+    .servicios-navbar a:hover h3 {
+      color: #6295A2; }
+    .servicios-navbar a h3 {
+      font-size: 25px; }
+
+.contenedor-flex-servicios {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  object-fit: cover; }
+  .contenedor-flex-servicios div {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+    width: 400px;
+    height: 550px;
+    margin: 20px;
+    border: 2px solid #F7DCB9;
+    box-shadow: 0 0 20px black; }
+    .contenedor-flex-servicios div h3 {
+      font-size: 21px; }
+    .contenedor-flex-servicios div p {
+      margin: 10px; }
+      .contenedor-flex-servicios div p a {
+        background-color: #deac807b;
+        padding: 10px;
+        color: #000000;
+        text-decoration: none;
+        text-align: center; }
+        .contenedor-flex-servicios div p a:hover {
+          color: #6295A2; }
+    .contenedor-flex-servicios div img {
+      width: 100%;
+      height: 236px;
+      object-fit: cover; }
+    .contenedor-flex-servicios div ul {
+      display: flex;
+      flex-direction: row; }
+      .contenedor-flex-servicios div ul li {
+        list-style-type: none;
+        margin: 5px; }
+        .contenedor-flex-servicios div ul li a {
+          color: #000000;
+          text-decoration: none;
+          text-align: center; }
+          .contenedor-flex-servicios div ul li a:hover {
+            color: #6295A2; }
 
 /**!---FOOTER---**/
 footer {
@@ -427,11 +506,23 @@ footer {
     flex-direction: column;
     align-items: center; } }
 
+@media screen and (max-width: 744px) {
+  .servicio-1 {
+    grid-row: unset; }
+  .servicio-2 {
+    grid-row: unset; }
+  .servicio-3 {
+    grid-row: unset; } }
+
 @media screen and (max-width: 647px) {
   .navegacion ul {
     flex-direction: column; }
   .navegacion ul li a {
-    padding: 5px 10px; } }
+    padding: 5px 10px; }
+  .hero-contacto h2 {
+    font-size: 25px; }
+  .hero-contacto h3 {
+    font-size: 21px; } }
 
 @media screen and (max-width: 607px) {
   .hero {
@@ -445,6 +536,12 @@ footer {
     border: 3px, solid, black;
     padding: 10px; } }
 
+@media screen and (max-width: 591px) {
+  .hero-contacto h2 {
+    font-size: 20px; }
+  .hero-contacto h3 {
+    visibility: hidden; } }
+
 @media screen and (max-width: 542px) {
   .productos-contenedor-guitarras div {
     width: 150px;
@@ -456,6 +553,15 @@ footer {
   .contenedor-grilla-guitarras-bajos {
     grid-template-columns: 125px; } }
 
+@media screen and (max-width: 480px) {
+  .contenedor-flex-servicios div {
+    width: 300px;
+    height: 550px; }
+    .contenedor-flex-servicios div p {
+      font-size: 15px; }
+    .contenedor-flex-servicios div ul li a {
+      font-size: 15px; } }
+
 @media screen and (max-width: 435px) {
   footer h3 {
     font-size: 28px; }
@@ -466,4 +572,15 @@ footer {
   .productos-contenedor div img {
     height: 250px; }
   .guitarra-producto {
-    object-fit: cover; } }
+    object-fit: cover; }
+  .contenedor-formulario form {
+    width: 320px; } }
+
+@media screen and (max-width: 361px) {
+  .hero-contacto h2 {
+    font-size: 18px; }
+  .contenedor-formulario form {
+    width: 280px; }
+  .contenedor-flex-servicios div {
+    width: 200px;
+    height: 350px; } }
