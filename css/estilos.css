@@ -208,15 +208,16 @@ header {
 
 .sidebar-logo a {
   text-decoration: none;
-  color: aliceblue; }
+  color: black; }
 
 .sidebar-item {
   text-decoration: none;
   list-style: none; }
 
-.sidebar-footer a {
+.sidebar-footer a span {
   text-decoration: none;
-  color: aliceblue; }
+  margin-left: 10px;
+  color: black; }
 
 .productos-contenedor-teclados {
   display: flex;
@@ -234,15 +235,16 @@ header {
 
 .sidebar-logo a {
   text-decoration: none;
-  color: aliceblue; }
+  color: black; }
 
 .sidebar-item {
   text-decoration: none;
   list-style: none; }
 
-.sidebar-footer a {
+.sidebar-footer a span {
   text-decoration: none;
-  color: aliceblue; }
+  margin-left: 10px;
+  color: black; }
 
 .productos-contenedor-percusion {
   display: flex;
@@ -381,7 +383,8 @@ header {
     border: 2px solid #F7DCB9;
     box-shadow: 0 0 20px black; }
     .contenedor-flex-servicios div h3 {
-      font-size: 21px; }
+      font-size: 21px;
+      margin: 10px; }
     .contenedor-flex-servicios div p {
       margin: 10px; }
       .contenedor-flex-servicios div p a {

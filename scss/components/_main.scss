@@ -146,7 +146,7 @@
 .sidebar-logo{
     a{
         text-decoration: none;
-        color: aliceblue;
+        color: rgb(0, 0, 0);
     }
 }
 .sidebar-item{
@@ -155,8 +155,12 @@
 }
 .sidebar-footer{
     a{
-        text-decoration: none;
-        color: aliceblue;
+
+        span{
+            text-decoration: none;
+            margin-left: 10px;
+            color: rgb(0, 0, 0);
+        }
     }
 }
 .productos-contenedor-teclados{
@@ -178,7 +182,7 @@
 .sidebar-logo{
     a{
         text-decoration: none;
-        color: aliceblue;
+        color: rgb(0, 0, 0);
     }
 }
 .sidebar-item{
@@ -187,8 +191,12 @@
 }
 .sidebar-footer{
     a{
-        text-decoration: none;
-        color: aliceblue;
+
+        span{
+            text-decoration: none;
+            margin-left: 10px;
+            color: rgb(0, 0, 0);
+        }
     }
 }
 .productos-contenedor-percusion{
@@ -338,6 +346,7 @@
         box-shadow: 0 0 20px black;
         h3{
             font-size: 21px;
+            margin: 10px;
         }
         p{
             margin: 10px;
