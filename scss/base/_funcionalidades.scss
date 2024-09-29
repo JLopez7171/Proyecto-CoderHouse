@@ -21,3 +21,67 @@ $color-secundario: #DEAC80;
     margin: 0;
     bottom: 0;
 }
+%productos{
+    flex-wrap: wrap;
+    grid-area: productos;
+    div{
+        margin: 20px;
+        border: 2px solid black;
+        box-shadow: 0 0 20 black;
+        width: 250px;
+        height: 350px;
+        background-color: #ffffff;
+        text-align: center;
+        h3{
+            margin: 15px;
+            font-size: 15px;
+        }
+        img{
+            width: 100%;
+            height: 250px;
+        }
+        p{
+            a{
+                @extend %enlaces-productos
+            }
+        }
+    }
+}
+%menu-productos{
+    flex-direction: column;
+    grid-area: menu;
+    background-color: $color-secundario;
+    height: auto;
+    nav{
+        ul{
+            li{
+                a{
+                    display: block;
+                    box-sizing: border-box;
+                    text-decoration: none;
+                    color: #000000;
+                    width: 100%;
+                    padding: 6px 10px;
+                }
+            }
+        }
+    }
+}
+%contenedor-grilla-instrumentos{
+    display: grid;
+    grid-template-areas: 
+    "menu productos productos"
+    "menu productos productos"
+    "menu productos productos"
+    "menu productos productos"
+    "menu productos productos"
+    "menu productos productos";
+    grid-template-columns: 150px;
+    grid-auto-rows: auto;
+}
+@mixin flex($disp, $justify, $align){
+    display: $disp;
+    justify-content: $justify;
+    align-items: $align;
+
+}

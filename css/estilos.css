@@ -14,6 +14,43 @@
   margin: 0;
   bottom: 0; }
 
+.productos-contenedor-guitarras, .productos-contenedor-teclados, .productos-contenedor-percusion {
+  flex-wrap: wrap;
+  grid-area: productos; }
+  .productos-contenedor-guitarras div, .productos-contenedor-teclados div, .productos-contenedor-percusion div {
+    margin: 20px;
+    border: 2px solid black;
+    box-shadow: 0 0 20 black;
+    width: 250px;
+    height: 350px;
+    background-color: #ffffff;
+    text-align: center; }
+    .productos-contenedor-guitarras div h3, .productos-contenedor-teclados div h3, .productos-contenedor-percusion div h3 {
+      margin: 15px;
+      font-size: 15px; }
+    .productos-contenedor-guitarras div img, .productos-contenedor-teclados div img, .productos-contenedor-percusion div img {
+      width: 100%;
+      height: 250px; }
+
+.menu-productos {
+  flex-direction: column;
+  grid-area: menu;
+  background-color: #DEAC80;
+  height: auto; }
+  .menu-productos nav ul li a {
+    display: block;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: #000000;
+    width: 100%;
+    padding: 6px 10px; }
+
+.contenedor-grilla-guitarras-bajos, .contenedor-grilla-teclados, .contenedor-grilla-percusion {
+  display: grid;
+  grid-template-areas: "menu productos productos" "menu productos productos" "menu productos productos" "menu productos productos" "menu productos productos" "menu productos productos";
+  grid-template-columns: 150px;
+  grid-auto-rows: auto; }
+
 /**!---RESET--- **/
 * {
   margin: 0;
@@ -134,84 +171,37 @@ header {
   grid-column: span 2; }
 
 /**?---Pagina guitarras y bajos---**/
-.contenedor-grilla-guitarras-bajos {
-  display: grid;
-  grid-template-areas: "menu productos productos" "menu productos productos" "menu productos productos" "menu productos productos" "menu productos productos" "menu productos productos";
-  grid-template-columns: 150px;
-  grid-auto-rows: auto; }
-
 .menu-productos {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  grid-area: menu;
-  background-color: #DEAC80;
-  height: auto; }
-  .menu-productos nav ul li a {
-    display: block;
-    box-sizing: border-box;
-    text-decoration: none;
-    color: #000000;
-    width: 100%;
-    padding: 6px 10px; }
+  justify-content: center;
+  align-items: center; }
 
 .bg-body-tertiary {
   background-color: #DEAC80 !important; }
 
 .sidebar-logo a {
   text-decoration: none;
-  color: aliceblue; }
+  color: black; }
 
 .sidebar-item {
   text-decoration: none;
   list-style: none; }
 
-.sidebar-footer a {
+.sidebar-footer a span {
   text-decoration: none;
-  color: aliceblue; }
+  margin-left: 10px;
+  color: black; }
 
 .productos-contenedor-guitarras {
   display: flex;
   justify-content: center;
-  align-items: end;
-  flex-wrap: wrap;
-  grid-area: productos; }
-  .productos-contenedor-guitarras div {
-    margin: 20px;
-    border: 2px solid black;
-    box-shadow: 0 0 20 black;
-    width: 250px;
-    height: 350px;
-    background-color: #ffffff;
-    text-align: center; }
-    .productos-contenedor-guitarras div h3 {
-      margin: 15px;
-      font-size: 15px; }
-    .productos-contenedor-guitarras div img {
-      width: 100%;
-      height: 250px; }
+  align-items: end; }
 
 /*!---Página teclados---*/
-.contenedor-grilla-teclados {
-  display: grid;
-  grid-template-areas: "menu productos productos" "menu productos productos" "menu productos productos" "menu productos productos" "menu productos productos" "menu productos productos";
-  grid-template-columns: 150px;
-  grid-auto-rows: auto; }
-
 .menu-productos {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  grid-area: menu;
-  background-color: #DEAC80;
-  height: auto; }
-  .menu-productos nav ul li a {
-    display: block;
-    box-sizing: border-box;
-    text-decoration: none;
-    color: #000000;
-    width: 100%;
-    padding: 6px 10px; }
+  justify-content: center;
+  align-items: center; }
 
 .bg-body-tertiary {
   background-color: #DEAC80 !important; }
@@ -231,45 +221,13 @@ header {
 .productos-contenedor-teclados {
   display: flex;
   justify-content: center;
-  align-items: end;
-  flex-wrap: wrap;
-  grid-area: productos; }
-  .productos-contenedor-teclados div {
-    margin: 20px;
-    border: 2px solid black;
-    box-shadow: 0 0 20 black;
-    width: 250px;
-    height: 350px;
-    background-color: #ffffff;
-    text-align: center; }
-    .productos-contenedor-teclados div h3 {
-      margin: 15px;
-      font-size: 15px; }
-    .productos-contenedor-teclados div img {
-      width: 100%;
-      height: 250px; }
+  align-items: center; }
 
 /*---Pagina percusion---*/
-.contenedor-grilla-percusion {
-  display: grid;
-  grid-template-areas: "menu productos productos" "menu productos productos" "menu productos productos" "menu productos productos" "menu productos productos" "menu productos productos";
-  grid-template-columns: 150px;
-  grid-auto-rows: auto; }
-
 .menu-productos {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  grid-area: menu;
-  background-color: #DEAC80;
-  height: auto; }
-  .menu-productos nav ul li a {
-    display: block;
-    box-sizing: border-box;
-    text-decoration: none;
-    color: #000000;
-    width: 100%;
-    padding: 6px 10px; }
+  justify-content: start;
+  align-items: center; }
 
 .bg-body-tertiary {
   background-color: #DEAC80 !important; }
@@ -289,23 +247,7 @@ header {
 .productos-contenedor-percusion {
   display: flex;
   justify-content: center;
-  align-items: end;
-  flex-wrap: wrap;
-  grid-area: productos; }
-  .productos-contenedor-percusion div {
-    margin: 20px;
-    border: 2px solid black;
-    box-shadow: 0 0 20 black;
-    width: 250px;
-    height: 350px;
-    background-color: #ffffff;
-    text-align: center; }
-    .productos-contenedor-percusion div h3 {
-      margin: 15px;
-      font-size: 15px; }
-    .productos-contenedor-percusion div img {
-      width: 100%;
-      height: 250px; }
+  align-items: end; }
 
 /*?---Pagina contacto---*/
 .hero-contacto {
@@ -363,10 +305,10 @@ header {
 .contenedor-formulario-aside {
   grid-area: faside;
   display: flex;
-  flex-direction: column;
   justify-content: center;
-  text-align: center;
-  align-items: center; }
+  align-items: center;
+  flex-direction: column;
+  text-align: center; }
   .contenedor-formulario-aside div {
     box-shadow: 0 0 15px black;
     margin-top: 10px;
@@ -403,8 +345,8 @@ header {
 
 .servicios-navbar {
   display: flex;
-  align-items: center;
   justify-content: space-between;
+  align-items: center;
   flex-wrap: wrap; }
   .servicios-navbar a {
     margin: 15px;
@@ -422,16 +364,16 @@ header {
 
 .contenedor-flex-servicios {
   display: flex;
-  flex-direction: row;
   justify-content: space-around;
   align-items: center;
+  flex-direction: row;
   flex-wrap: wrap;
   object-fit: cover; }
   .contenedor-flex-servicios div {
     display: flex;
-    flex-direction: column;
-    justify-items: center;
+    justify-content: center;
     align-items: center;
+    flex-direction: column;
     text-align: center;
     width: 400px;
     height: 550px;
